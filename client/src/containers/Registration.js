@@ -22,16 +22,62 @@ export default class Registration extends Component {
    
    render() {
     return (
-      <div>
-         <div>Registration Page</div>
-         <div>Vendor ID</div><div>{this.vendorId}</div>
-         <div>Business Name</div><div>{this.vendor.business_name}</div>
-         <div>Address Line 1</div><div>{this.vendor.address.address_line_1}</div>
-         <div>Address Line 2</div><div>{this.vendor.address.address_line_2}</div>
-         <div>City</div><div>{this.vendor.address.city}</div>
-         <div>State</div><div>{this.vendor.address.state}</div>
-         <div>Postal Code</div><div>{this.vendor.address.postal_code}</div>
+      <div class="container-fluid text-muted p-2">
+         <div class="d-flex flex-column justify-content-left text-muted p-3 border-bottom">Your Registration Info</div>
+         <div class="d-flex flex-column justify-content-center p-3">
+            <div class="d-flex flex-row border">
+               <div class="col-xs-1 col-sm-1 label bg-secondary text-white p-2">Vendor ID</div>
+               <div class="col-xs-4 col-sm-4 p-2">{this.vendorId}</div>
+            </div>
+            <div class="d-flex flex-row border">
+               <div class="col-xs-1 col-sm-1 label bg-secondary text-white p-2">Business Name</div>
+               <div class="col-xs-4 col-sm-4 p-2">{this.vendor.business_name}</div>
+            </div>
+            <div class="d-flex flex-row border">
+               <div class="col-xs-1 col-sm-1 label bg-secondary text-white p-2">Address Line 1</div>
+               <div class="col-xs-4 col-sm-4 p-2">{this.vendor.address.address_line_1}</div>
+            </div>
+            <div class="d-flex flex-row border">
+               <div class="col-xs-1 col-sm-1 label bg-secondary text-white p-2">Address Line 2</div>
+               <div class="col-xs-4 col-sm-4 p-2">{this.vendor.address.address_line_2}</div>
+            </div>
+            <div class="d-flex flex-row border">
+               <div class="col-xs-1 col-sm-1 label bg-secondary text-white p-2">City</div>
+               <div class="col-xs-4 col-sm-4 p-2">{this.vendor.address.city}</div>
+            </div>
+            <div class="d-flex flex-row border">
+               <div class="col-xs-1 col-sm-1 label bg-secondary text-white p-2">State</div>
+               <div class="col-xs-4 col-sm-4 p-2">{this.vendor.address.state}</div>
+            </div>
+            <div class="d-flex flex-row border">
+               <div class="col-xs-1 col-sm-1 label bg-secondary text-white p-2">Postal Code</div>
+               <div class="col-xs-4 col-sm-4 p-2">{this.vendor.address.postal_code}</div>
+            </div>
+         </div>
       </div>
     )
   }
 }
+
+/*
+   <div class="d-flex flex-row border">
+      <div class="col-xs-1 col-sm-1 label bg-secondary text-white p-2">Address Line 1</div>
+      <div class="col-xs-4 col-sm-4 p-2">101 Post Street</div>
+   </div>
+   <div class="d-flex flex-row border">
+      <div class="col-xs-1 col-sm-1 label bg-secondary text-white p-2">Address Line 2</div>
+      <div class="col-xs-4 col-sm-4 p-2">Unit #2</div>
+   </div>
+   <div class="d-flex flex-row border">
+      <div class="col-xs-1 col-sm-1 label bg-secondary text-white p-2">City</div>
+      <div class="col-xs-4 col-sm-4 p-2">San Francisco</div>
+   </div>
+   <div class="d-flex flex-row border">
+      <div class="col-xs-1 col-sm-1 label bg-secondary text-white p-2">State</div>
+      <div class="col-xs-4 col-sm-4 p-2">CA</div>
+   </div>
+   <div class="d-flex flex-row border">
+      <div class="col-xs-1 col-sm-1 label bg-secondary text-white p-2">Postal Code</div>
+      <div class="col-xs-4 col-sm-4 p-2">94101</div>
+   </div>
+</div></div>*/
