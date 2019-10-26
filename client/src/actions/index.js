@@ -32,3 +32,8 @@ export const signout = () => {
         payload: ""
     }
 }
+
+export const registration = (formProps, callback) => async dispatch => {
+   return {
+  }
+}
