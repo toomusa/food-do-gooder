@@ -22,9 +22,9 @@ const UserSchema = new Schema ({
         type: String,
         required: true
     },
-    todos: [
+    vendor: [
         {
-            ref: "Todo",
+            ref: "Vendor",
             type: Schema.Types.ObjectId
         }
     ]

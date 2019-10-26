@@ -1,5 +1,4 @@
-import { INCREMENT_COUNTER, DECREMENT_COUNTER, AUTH_USER, AUTH_ERROR, ADD_TODO, TODO_ERROR, FETCH_TODOS } from "./types";
-// import { * as types } from "./types";
+import { AUTH_USER, AUTH_ERROR} from "./types";
 import axios from "axios";
 
 export const signup = (formProps, callback) => async dispatch => {

@@ -7,12 +7,9 @@ import reduxThunk from "redux-thunk";
 
 // import containers
 import App from './containers/App';
-import Counter from "./containers/Counter";
-import Stuff from "./containers/Stuff";
 import Signup from "./containers/Signup";
 import Signin from "./containers/Signin";
 import Signout from "./containers/Signout";
-import Todo from "./containers/Todo";
 
 // import components
 import Welcome from "./components/Welcome";
