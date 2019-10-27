@@ -2,6 +2,11 @@ body, html {
   overflow-x: hidden;
   margin: 0 auto;
   padding: 0 auto;
+  font-family: 'Chelsea Market', cursive;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, div {
+  font-family: 'Chelsea Market', cursive;
 }
 
 .pdfPage {
@@ -12,6 +17,10 @@ body, html {
 .pdfCanvas {
   width: 100%;
   max-width: 100%;
+}
+
+#tagline {
+  color: yellow;
 }
 
 #pdfDiv {
@@ -36,34 +45,38 @@ body, html {
 }
 
 #heading {
-  background-color: darkgreen;
+  background-color: #f04924;
   color: whitesmoke;
   width: 100%;
-  height: 150px;
+  height: 180px;
   padding: 20px;
   margin: 0px;
   text-align: center;
+  font-family: 'Chelsea Market', cursive;
 }
 
 #rowing {
-  background-color: darkgreen;
+  background-color: #f04924;
   width: 100%;
-  height: 150px;
+  height: 180px;
   padding: 0;
   margin: 0px;
 }
 
 .navbar {
-  background-color: darkgreen;
+  background-color: #f04924;
   height: 50px;
   color: whitesmoke;
   text-align: center;
+  margin-top: 20px;
 }
 
 #navtext {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  font-weight: bold;
+  font-family: 'Chelsea Market', cursive;
 }
 
 .linko {
@@ -207,4 +220,14 @@ body, html {
 
 .marginer {
   margin-top: 20px;
+}
+
+.inline-view {
+  display: inline-block;
+}
+
+#bizImg {
+  float: left;
+  margin-right: 30px;
+  margin-left: 10px;
 }
