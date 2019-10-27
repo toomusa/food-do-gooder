@@ -10,6 +10,8 @@ import App from './containers/App';
 import Signup from "./containers/Signup";
 import Signin from "./containers/Signin";
 import Signout from "./containers/Signout";
+import Example from "./components/Example";
+import AddLog from './containers/AddLog';
 
 // import components
 import Welcome from "./components/Welcome";
@@ -32,6 +34,8 @@ ReactDOM.render(
                 <Route exact path="/signup" component={Signup}/>
                 <Route exact path="/signin" component={Signin}/>
                 <Route exact path="/signout" component={Signout}/>
+                <Route exact path="/example" component={Example}/>
+                <Route exact path="/addlog" component={AddLog}/>
             </App>
         </Router>
     </Provider>
