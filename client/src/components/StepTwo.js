@@ -12,6 +12,8 @@ export default function StepTwo() {
           <option value="Glide">Glide</option>
           <option value="St. Anthony's">St. Anthony's</option>
           <option value="Meals on Wheels">Meals on Wheels</option>
+          <option value="City Team">City Team</option>
+          <option value="Food Runners">Food Runners</option>
         </select>
       </h6>
       <h6><strong>Time:</strong> {time}</h6>
