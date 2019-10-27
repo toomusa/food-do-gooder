@@ -9,7 +9,7 @@ class Signout extends Component {
     }
 
     render() {
-        return <h1>Sorry to see you go</h1>
+        return <h3 className="centered">See you next time!</h3>
     }
 }
 
