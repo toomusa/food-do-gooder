@@ -6,7 +6,7 @@ import glide from '../assets/images/glide.svg';
 
 const Card = () => {
     return(
-  <div>
+  <div align="center">
     <div className="card" style="max-width: 1000px;">
         <div className="row no-gutters">
             <div className="col-md-3" style="background: #868e96;">
@@ -36,4 +36,4 @@ const Card = () => {
 
 }
 
-export default Welcome;
+export default Card;
