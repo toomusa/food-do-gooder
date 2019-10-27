@@ -10,11 +10,15 @@ import App from './containers/App';
 import Signup from "./containers/Signup";
 import Signin from "./containers/Signin";
 import Signout from "./containers/Signout";
-import Registration from "./containers/Registration";
+import AddLog from './containers/AddLog';
+import Registration from './containers/Registration';
 
 // import components
-import Welcome from "./components/Welcome";
 import reducers from "./reducers";
+import Dashboard from './containers/Dashboard';
+import Tax from './containers/Tax';
+import Home from './containers/Home';
+import Partners from './containers/Partners';
 
 // configure redux devtools
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
@@ -29,11 +33,15 @@ ReactDOM.render(
     <Provider store={store}>
         <Router>
             <App>
-                <Route exact path="/" component={Welcome}/>
+                <Route exact path="/" component={Home}/>
                 <Route exact path="/signup" component={Signup}/>
                 <Route exact path="/signin" component={Signin}/>
                 <Route exact path="/signout" component={Signout}/>
+                <Route exact path="/newentry" component={AddLog}/>
+                <Route exact path="/dashboard" component={Dashboard}/>
                 <Route exact path="/registration" component={Registration}/>
+                <Route exact path="/tax" component={Tax}/>
+                <Route exact path="/partners" component={Partners}/>
             </App>
         </Router>
     </Provider>
