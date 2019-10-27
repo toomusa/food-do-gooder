@@ -5,8 +5,8 @@ export default function StepTwo() {
 
   return (
     <div>
-      <h5>Select the receiving party and time</h5>
-      <h6><strong>Pickup by:</strong> 
+      <h5>Select the receiving party and time</h5><br></br>
+      <h6><strong>Pickup by: </strong> 
         <select>
           <option selected value="Select One">Select One</option>
           <option value="Glide">Glide</option>

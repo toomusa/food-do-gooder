@@ -34,31 +34,33 @@ export default class AddLog extends Component {
       case 2:
         return (<StepThree />)
       case 3: 
-        this.props.history.push("/dashboard");
-        break;
+        return (<h3>Your donation is logged successfully.</h3>)
       default:
         return(<div></div>)
     }
   }
 
   render() {  
-    const buttonStyle = { background: '#E0E0E0', width: 200, padding: 16, textAlign: 'center', margin: '0 auto', marginTop: 32 };
+    const buttonStyle = { background: '#E0E0E0', width: 100, padding: 6, textAlign: 'center', margin: '10px', marginTop: 32 };
+    const { currentStep } = this.state;
 
     return (
       <div>
         <div className="container">
           <div className="row">
             <div className="col-md-10 col-sm-12 col-xs-12 offset-md-1">
-              Add Log Page
-              <div>
-                <Stepper steps={ [{title: 'Info'}, {title: 'Log'}, {title: 'Receipt'}] } activeStep={ 0 } />
+              <div className="centered">
+                <h3>Follow these 3 easy steps to record a donation</h3>
               </div>
               <div>
-                {this.renderStep()}
+                <Stepper steps={ [{title: 'Info'}, {title: 'Log'}, {title: 'Receipt'}] } activeStep={ currentStep } />
               </div>
-              <div>
+              <div className="centered">
                 <button style={ buttonStyle } onClick={ () => this.onClickPrev() }>Back</button>
-                <button style={ buttonStyle } onClick={ () => this.onClickNext() }>Next</button>
+                <button style={ buttonStyle } onClick={ () => this.onClickNext() }>{currentStep === 2 ? <span>Finish</span> : <span>Next</span>}</button>
+              </div>
+              <div className="centered">
+                {this.renderStep()}
               </div>
             </div>
           </div>
