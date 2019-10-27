@@ -25,7 +25,7 @@ export default class Registration extends Component {
       <div className="container-fluid text-muted p-2">
          <div className="border-bottom p-2">
             <div className="d-inline align-bottom p-2">
-               <img height="30px" width="30px" src="https://s3-media3.fl.yelpcdn.com/bphoto/AiY7NjrgmWP9_nE5jtM1iw/o.jpg"/>
+               <img src="https://s3-media3.fl.yelpcdn.com/bphoto/AiY7NjrgmWP9_nE5jtM1iw/o.jpg" alt="logo" height="30px" width="30px" />
             </div>
             <div className="d-inline align-bottom p-2">
                Registration - {this.vendor.business_name}

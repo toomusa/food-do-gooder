@@ -160,3 +160,51 @@ body, html {
     opacity:1;
   }
 }
+
+.styleDiv {
+  background: #868e96;
+}
+
+.dashboard-image {
+  height: 250px;
+  margin: 5px;
+  display: inline-block;
+}
+
+.top-row {
+  margin-top: -150px;
+}
+
+#info-block {
+  display: inline-block;
+  max-width: 200px;
+  line-height: 100px;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-top: 50px;
+}
+
+.spacer {
+  display: inline-block;
+}
+
+#logoImg {
+  float: left;
+  z-index: 2;
+  clear: left;
+}
+
+.partner-div {
+  margin: 10px 60px;
+  border: none;
+}
+
+.partnerImg {
+  max-height: 150px;
+  padding-top: auto;
+  padding-bottom: auto;
+}
+
+.marginer {
+  margin-top: 20px;
+}

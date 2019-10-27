@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PDFViewer from 'pdf-viewer-reactjs';
 import Form8283 from "../assets/files/Form-8283.pdf";
 import Instructions from "../assets/files/Form-8283-Instructions.pdf";
+import Statement from "../assets/files/Statement.pdf";
 
 export default class Tax extends Component {
 
@@ -19,6 +20,10 @@ export default class Tax extends Component {
         return (
         <PDFViewer 
           document={{file: Instructions}} canvasCss="pdfCanvas" css="pdfPage" scale={1.5} navbarOnTop={true}/>)
+      case 3:
+        return (
+        <PDFViewer 
+          document={{file: Statement}} canvasCss="pdfCanvas" css="pdfPage" scale={1.5} navbarOnTop={true}/>)
       default:
         return (
         <PDFViewer 
@@ -33,7 +38,7 @@ export default class Tax extends Component {
   }
 
   render() {
-    const buttonStyle = { width: 100, padding: 6, textAlign: 'center', margin: '10px' };
+    const buttonStyle = { padding: 6, textAlign: 'center', margin: '10px' };
 
     return (
       <div>
@@ -45,6 +50,7 @@ export default class Tax extends Component {
         <div className="centered">
           <button className="btn-primary" style={ buttonStyle } onClick={ () => this.selectForm(1) }>Form 8283</button>
           <button className="btn-primary" style={ buttonStyle } onClick={ () => this.selectForm(2) }>Instructions</button>
+          <button className="btn-primary" style={ buttonStyle } onClick={ () => this.selectForm(3) }>Sample Statement</button>
         </div>
         <div id="pdfDiv">
           {this.renderPdf()}
