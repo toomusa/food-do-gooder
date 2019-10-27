@@ -8,6 +8,7 @@ export default class AddLog extends Component {
 
   state = {
     currentStep: 0
+    
   }
 
   onClickNext() {
