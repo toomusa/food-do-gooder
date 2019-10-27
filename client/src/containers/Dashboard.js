@@ -18,8 +18,9 @@ export default class Dashboard extends Component {
           <img src={Dashboard2} alt="Graphic 2" className="dashboard-image" />
           <img src={Dashboard1} alt="Graphic 1" className="dashboard-image" />
         </div>
-	<div>
-	<table class="table table-borderless">
+        <div>
+        <h3 className="centered">Records of Your Recent Donations</h3>
+        <table className="table table-borderless" id="logTable">
           <thead>
             <tr>
               <th scope="col">Date</th>
@@ -30,27 +31,27 @@ export default class Dashboard extends Component {
           </thead>
           <tbody>
             <tr>
-              <td>10/19/20</td>
+              <td>10/25/19</td>
               <td>Garlic Rolls, Spaghetti, Pizza</td>
               <td>$75</td>
               <td>Glide</td>
             </tr>
             <tr>
-              <td>10/25/20</td>
+              <td>10/19/19</td>
               <td>Taco Meat, Tortillas, Rice, Beans</td>
               <td>$65</td>
               <td>Food Runners</td>
             </tr>
             <tr>
-              <td>10/05/20</td>
+              <td>10/14/19</td>
               <td>Chicken Tandoori, Naan, Butter Chicken</td>
               <td>$85</td>
-              <td>St. Anthonsy</td>
+              <td>St. Anthony</td>
             </tr>
             <tr>
-              <td>10/14/20</td>
+              <td>10/08/19</td>
               <td>Bulgogi, Dumplings, Rice, Seaweed Snacks</td>
-              <td>$75></td>
+              <td>$75</td>
               <td>City Team</td>
             </tr>
           </tbody>
