@@ -35,11 +35,11 @@ export default function Navbar(props) {
             ? <span className="activeLink"><strong>New Entry</strong></span>
             : <span>New Entry</span>}
         </Link>
-        <Link to="/signout" className="linko" onClick={() => props.activate("/signout")}>
+        {/* <Link to="/signout" className="linko" onClick={() => props.activate("/signout")}>
           {props.path === "/signout"
             ? <span className="activeLink"><strong>Signout</strong></span>
             : <span>Signout</span>}
-        </Link>
+        </Link> */}
       </div>
     </div>
   )

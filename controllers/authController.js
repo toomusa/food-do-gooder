@@ -1,13 +1,13 @@
 const db     = require("../models");
 const jwt    = require("jwt-simple");
-const config = require("../config");
+// const config = require("../config");
 
 const tokenForUser = user => {
     const timestamp = new Date().getTime();
     // Sub === subject
     // Iat === issues at time
     // It's going to encode the whole 1st object and then add our secret to it
-    return jwt.encode({sub: user.id, iat: timestamp}, config.secret);
+    return jwt.encode({sub: user.id, iat: timestamp}, process.env.SECRET);
 }
 
 module.exports = {
