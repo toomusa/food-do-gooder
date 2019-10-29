@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const apiRoutes = require("./apiRoutes");
+const path = require('path')
 
 // Setup API routes
 // prepends /api to all of the routes declared in this file
