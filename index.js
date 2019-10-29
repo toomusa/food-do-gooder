@@ -4,6 +4,7 @@ const morgan = require("morgan");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const app = express();
+const router = express.Router();
 
 // Database setup
 mongoose.connect("mongodb://localhost:auth/auth", {useNewUrlParser: true, useCreateIndex: true})
@@ -22,6 +23,10 @@ if (process.env.NODE_ENV === "production") {
 
 // Routes setup
 const routes = require("./routes");
+
+router.use(function(req, res) {
+    res.sendFile(path.join(__dirname, "../client/build/index.html"));
+  });
 
 // Error Handling Goes Here
 // app.use(routes);
