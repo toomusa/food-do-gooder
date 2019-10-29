@@ -1,6 +1,6 @@
 const passport      = require("passport");
 const User          = require("../models/User");
-const config        = require("../config");
+// const config        = require("../config");
 const JwtStrategy   = require("passport-jwt").Strategy;
 const ExtractJwt     = require("passport-jwt").ExtractJwt;
 const LocalStrategy = require("passport-local");
@@ -35,7 +35,7 @@ const jwtOptions = {
     jwtFromRequest: ExtractJwt.fromHeader("authorization"),
     // tells jwt strategy what secret we used to encode the token
     // so that it can decode it
-    secretOrKey: config.secret
+    secretOrKey: process.env.SECRET
 }
 
 // We are going to get the payload argument from an incoming request
