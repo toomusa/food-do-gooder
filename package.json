@@ -1,10 +1,10 @@
 {
-  "name": "Oauth-React-Boilerplate",
+  "name": "Food Do-Gooder",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "engine": {
-    "Node": "10.5.3"
+  "engines": {
+    "node": "10.5.3"
   },
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
