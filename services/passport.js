@@ -1,11 +1,12 @@
 const passport      = require("passport");
 const User          = require("../models/User");
+const config        = require("../config");
 const JwtStrategy   = require("passport-jwt").Strategy;
 const ExtractJwt     = require("passport-jwt").ExtractJwt;
 const LocalStrategy = require("passport-local");
-// // const config        = require("../config");
 
 // Create local strategy
+
 
 // By default LocalStrategy is expecting a username and a password
 const localOptions = { usernameField: "email"};
@@ -34,7 +35,7 @@ const jwtOptions = {
     jwtFromRequest: ExtractJwt.fromHeader("authorization"),
     // tells jwt strategy what secret we used to encode the token
     // so that it can decode it
-    secretOrKey: process.env.SECRET
+    secretOrKey: config.secret
 }
 
 // We are going to get the payload argument from an incoming request
